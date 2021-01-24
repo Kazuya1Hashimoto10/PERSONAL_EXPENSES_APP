@@ -7,28 +7,26 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp( 
+    return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(),
-    );   
+    );
   }
 }
 
 class MyHomePage extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('title'),
       ),
-      body: (
-        Center(
-          child: Text('Widget Play Ground!!'),
-        )
+      body: Center(
+        child: Text('Widget Play Ground!!'),
       ),
     );
   }
