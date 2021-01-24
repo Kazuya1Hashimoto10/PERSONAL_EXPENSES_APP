@@ -25,8 +25,19 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('title'),
       ),
-      body: Center(
-        child: Text('Widget Play Ground!!'),
+      body: Column(
+        children: <Widget>[
+          Container(
+            width: double.infinity,
+            child: Card(
+              child: Text('Chart'),
+              elevation: 5,
+            ),
+          ),
+          Card(
+            child: Text('LIST OF TX'),
+          )
+        ],
       ),
     );
   }
